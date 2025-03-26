@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "129127225544",
+    "firebase_url": "https://my-firebase-chat-2e8d4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "my-firebase-chat-2e8d4",
+    "storage_bucket": "my-firebase-chat-2e8d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129127225544:android:632515aeebfd0c1fe76dfd",
+        "android_client_info": {
+          "package_name": "com.project.dicodingplayground"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129127225544-paill0bg9529na842btduoiilc857391.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.dicodingplayground",
+            "certificate_hash": "d168f40e767b6aec8c502786aa094e433eacc907"
+          }
+        },
+        {
+          "client_id": "129127225544-cri2pn0nk4s7eqm2uru9e0be9kjsea8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO33-03ok5IPrCA24eztgEoiTvs-TMmdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129127225544-cri2pn0nk4s7eqm2uru9e0be9kjsea8i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

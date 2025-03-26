@@ -1,0 +1,14 @@
+<!-- res/values-night/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application night theme. -->
+    <style name="Base.Theme.DicodingPlayground" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your night theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<!--        <item name="android:windowActivityTransitions">true</item>-->
+<!--        <item name="android:windowEnterTransition">@android:transition/explode</item>-->
+<!--        <item name="android:windowExitTransition">@android:transition/explode</item>-->
+    </style>
+
+    <style name="Theme.DicodingPlayground" parent="Base.Theme.DicodingPlayground" />
+
+</resources>

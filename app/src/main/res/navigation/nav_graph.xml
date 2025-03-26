@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/upcoming">
+
+    <fragment
+        android:id="@+id/upcoming"
+        android:name="com.project.dicodingplayground.submission_fundamental_android.ui.events.EventFragment"
+        android:label="@string/upcoming" />
+
+    <fragment
+        android:id="@+id/finished"
+        android:name="com.project.dicodingplayground.submission_fundamental_android.ui.events.EventFragment"
+        android:label="@string/finished" />
+
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.project.dicodingplayground.submission_fundamental_android.ui.events.EventFragment"
+        android:label="@string/favorites" />
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.project.dicodingplayground.submission_fundamental_android.ui.settings.SettingsFragment"
+        android:label="@string/settings" />
+
+</navigation>

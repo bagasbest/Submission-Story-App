@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="height_300">300dp</dimen>
+</resources>
