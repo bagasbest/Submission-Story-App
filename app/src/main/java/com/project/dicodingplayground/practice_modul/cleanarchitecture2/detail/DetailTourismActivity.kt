@@ -1,17 +1,15 @@
 package com.project.dicodingplayground.practice_modul.cleanarchitecture2.detail
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import com.project.dicodingplayground.practice_modul.cleanarchitecture2.core.domain.model.Tourism
+
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.IntentCompat.getParcelableExtra
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.bumptech.glide.Glide
 import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityDetailTourismBinding
-import com.project.dicodingplayground.practice_modul.cleanarchitecture2.core.data.source.local.entity.TourismEntity
 import com.project.dicodingplayground.practice_modul.cleanarchitecture2.core.ui.ViewModelFactory
 
 class DetailTourismActivity : AppCompatActivity() {
@@ -28,11 +26,11 @@ class DetailTourismActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
 
-        val detailTourism = getParcelableExtra(intent, EXTRA_DATA, TourismEntity::class.java)
+        val detailTourism = getParcelableExtra(intent, EXTRA_DATA, Tourism::class.java)
         showDetailTourism(detailTourism)
     }
 
-    private fun showDetailTourism(detailTourism: TourismEntity?) {
+    private fun showDetailTourism(detailTourism: Tourism?) {
         detailTourism?.let {
             supportActionBar?.title = detailTourism.name
             binding.contentDetailTourism.tvDetailDescription.text = detailTourism.description
