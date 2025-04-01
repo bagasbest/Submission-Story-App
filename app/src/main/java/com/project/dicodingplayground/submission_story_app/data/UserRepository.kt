@@ -87,10 +87,11 @@ class UserRepository private constructor(
 
     fun getStories(): LiveData<PagingData<ListStoryItem>> {
         val token = runBlocking { getSession().first().token }
+        val apiService = ApiConfig().getApiService(token)
         @OptIn(ExperimentalPagingApi::class)
         return Pager(
             config = PagingConfig(pageSize = 5),
-            remoteMediator = StoryRemoteMediator(database, token),
+            remoteMediator = StoryRemoteMediator(database, apiService),
             pagingSourceFactory = {
                 database.storyDao().getAllStory()
             }
@@ -127,12 +128,19 @@ class UserRepository private constructor(
         )
         try {
             val token = getSession().first().token
-            val successResponse = ApiConfig().getApiService(token).uploadStory(
-                descriptionRequestBody!!,
-                multipartBody,
-                latitudeRequestBody!!,
-                longitudeRequestBody!!,
-            )
+            val successResponse = if (latitudeRequestBody == null && longitudeRequestBody == null) {
+                ApiConfig().getApiService(token).uploadStoryWithoutLatLng(
+                    descriptionRequestBody!!,
+                    multipartBody,
+                )
+            } else {
+                ApiConfig().getApiService(token).uploadStory(
+                    descriptionRequestBody!!,
+                    multipartBody,
+                    latitudeRequestBody!!,
+                    longitudeRequestBody!!,
+                )
+            }
             emit(Result.Success(successResponse))
         } catch (e: HttpException) {
             val errorBody = e.response()?.errorBody()?.string()

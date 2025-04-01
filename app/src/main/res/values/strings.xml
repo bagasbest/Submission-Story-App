@@ -211,4 +211,14 @@
     <string name="you_must_active_gps">Anda harus mengaktifkan GPS untuk menggunakan aplikasi ini!</string>
     <string name="please_allow_all_permission_to_post_story">Please allow all permission to post story!</string>
     <string name="say_something">Say something...</string>
+    <string name="image_description">Image</string>
+    <string name="text_primary">Sample of title text</string>
+    <string name="text_subtitle">Sample of subtitle text</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Maps</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="title_activity_detail_home">DetailHomeActivity</string>
+    <string name="add_current_location">Add Current Location</string>
 </resources>

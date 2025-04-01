@@ -75,7 +75,7 @@ class StoryActivity : AppCompatActivity() {
             // Optionally, scroll the recycler view to the top
             Handler(Looper.getMainLooper()).postDelayed({
                 binding.rvStory.scrollToPosition(0)
-            }, 100)
+            }, 200)
         }
     }
 

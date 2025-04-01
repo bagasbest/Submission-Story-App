@@ -30,6 +30,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".practice_modul.cleanarchitecture2.detail.DetailTourismActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice_modul.cleanarchitecture2.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice_modul.cleanarchitecture.presentation.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".submission_story_app.view.story.MapsActivity"
             android:exported="false" />
         <activity

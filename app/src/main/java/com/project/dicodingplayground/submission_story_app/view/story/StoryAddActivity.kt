@@ -173,7 +173,8 @@ class StoryAddActivity : AppCompatActivity() {
 
     private fun uploadImage() {
         val description = binding.etDescription.text.toString()
-        if (currentLatLng == null) {
+        val confirmAddLocation = binding.cbConfirmLocationAdded.isChecked
+        if (confirmAddLocation && currentLatLng == null) {
             showToast(getString(R.string.please_allow_all_permission_to_post_story))
         } else if (currentImageUri == null) {
             showToast(getString(R.string.empty_image))
@@ -185,8 +186,8 @@ class StoryAddActivity : AppCompatActivity() {
             val payload = StoryAddPayload(
                 imageFile,
                 description,
-                currentLatLng!!.latitude,
-                currentLatLng!!.longitude
+                currentLatLng?.latitude,
+                currentLatLng?.longitude
             )
             viewModel.uploadImage(payload).observe(this) { result ->
                 if (result != null) {

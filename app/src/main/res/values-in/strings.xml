@@ -49,7 +49,7 @@
     <string name="enable_dark_mode">Aktifkan Mode Gelap</string>
     <string name="upcoming_event">Acara Mendatang</string>
     <string name="you_must_be_excited">Anda pasti bersemangat</string>
-    <string name="something_wrong" >Ada Sesuatu</string>
+    <string name="something_wrong">Ada Sesuatu</string>
     <string name="daily_reminder">Pengingat Harian</string>
     <string name="enable_daily_reminder">Aktifkan Pengingat Harian</string>
     <string name="finished_event">Acara Selesai</string>
@@ -132,7 +132,7 @@
     <string name="sudah_siap_untuk_berbagi_pengalaman_mengesankanmu">Sudah siap untuk berbagi pengalaman mengesankanmu?</string>
     <string name="silahkan_isi_email_dan_kata_sandi_anda_dibawah">Silahkan isi email dan kata sandi anda dibawah!</string>
     <string name="isi_dulu">Isi Semua Di Atas</string>
-    <string name="input_your_name" >Input your name</string>
+    <string name="input_your_name">Input your name</string>
     <string name="email_must_be_filled">Email harus diisi</string>
     <string name="email_not_valid">Format email tidak valid!</string>
     <string name="password_must_be_filled">Kata sandi harus diisi</string>
@@ -171,4 +171,14 @@
     <string name="you_must_active_gps">Anda harus mengaktifkan GPS untuk menggunakan aplikasi ini!</string>
     <string name="please_allow_all_permission_to_post_story">Please allow all permission to post story!</string>
     <string name="say_something">Say something...</string>
+    <string name="image_description">Image</string>
+    <string name="text_primary">Sample of title text</string>
+    <string name="text_subtitle">Sample of subtitle text</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Maps</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="title_activity_detail_home">DetailHomeActivity</string>
+    <string name="add_current_location">Add Current Location</string>
 </resources>

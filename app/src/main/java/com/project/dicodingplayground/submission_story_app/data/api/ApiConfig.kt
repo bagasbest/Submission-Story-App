@@ -1,7 +1,5 @@
 package com.project.dicodingplayground.submission_story_app.data.api
 
-import com.chuckerteam.chucker.api.ChuckerInterceptor
-import com.project.dicodingplayground.MyApplication
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -19,7 +17,6 @@ class ApiConfig {
         }
         val client = OkHttpClient.Builder()
             .addInterceptor(authInterceptor)
-            .addInterceptor(ChuckerInterceptor(MyApplication.appContext))
             .build()
 
         val retrofit = Retrofit.Builder()

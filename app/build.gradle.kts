@@ -77,6 +77,7 @@ dependencies {
     implementation(libs.firebase.messaging)
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.junit.jupiter)
+    testImplementation(libs.junit.jupiter)
     ksp(libs.room.compiler)
     implementation(libs.androidx.room.ktx)
     testImplementation(libs.junit)

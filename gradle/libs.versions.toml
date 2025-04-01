@@ -2,9 +2,9 @@
 agp = "8.7.3"
 chipNavigationBar = "1.4.0"
 converterGson = "2.9.0"
-datastorePreferences = "1.1.3"
+datastorePreferences = "1.1.4"
 desugar_jdk_libs = "2.1.5"
-firebaseBom = "33.11.0"
+firebaseBom = "33.12.0"
 glide = "4.16.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
@@ -19,8 +19,9 @@ loggingInterceptor = "4.12.0"
 material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
-media3Exoplayer = "1.5.1"
-mockitoCore = "4.4.0"
+media3Exoplayer = "1.6.0"
+mockitoCore = "5.14.2"
+mockitoInline = "5.2.0"
 playServicesLocation = "21.3.0"
 roundedimageview = "2.3.0"
 rules = "1.6.1"
@@ -32,7 +33,7 @@ roomKtx = "2.6.1"
 workRuntime = "2.10.0"
 navigationFragmentKtx = "2.8.9"
 navigationUiKtx = "2.8.9"
-cameraxVersion = "1.4.1"
+cameraxVersion = "1.4.2"
 exifinterface = "1.4.0"
 playServicesMaps = "19.1.0"
 junitJupiter = "5.8.1"
@@ -85,7 +86,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
-mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoCore" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
 play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }

@@ -45,4 +45,11 @@ interface ApiService {
         @Part("lat") latitude: RequestBody,
         @Part("lon") longitude: RequestBody,
     ) : RegisterResponse
+
+    @Multipart
+    @POST("stories")
+    suspend fun uploadStoryWithoutLatLng(
+        @Part("description") description: RequestBody,
+        @Part file: MultipartBody.Part,
+    ) : RegisterResponse
 }
