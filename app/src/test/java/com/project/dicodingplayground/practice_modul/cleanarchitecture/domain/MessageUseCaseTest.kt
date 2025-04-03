@@ -1,5 +1,9 @@
-package import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.domain
+package com.project.dicodingplayground.practice_modul.cleanarchitecture.domain
 
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.domain.IMessageRepository
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.domain.MessageEntity
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.domain.MessageInteractor
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.domain.MessageUseCase
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
