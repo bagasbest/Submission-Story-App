@@ -1,4 +1,4 @@
-package com.project.dicodingplayground.practice_modul.cleanarchitecture.domain
+package import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.domain
 
 import org.junit.Assert
 import org.junit.Before

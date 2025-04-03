@@ -28,6 +28,11 @@ rules = "1.6.1"
 runner = "1.6.2"
 roomCompiler = "2.6.1"
 roomRuntime = "2.6.1"
+rxbinding = "2.0.0"
+rxjava = "2.2.21"
+rxandroid = "3.0.2"
+adapterRxjava3 = "2.9.0"
+lifecycleReactivestreamsKtx = "2.8.7"
 secretsGradlePlugin = "2.0.1"
 roomKtx = "2.6.1"
 workRuntime = "2.10.0"
@@ -119,6 +124,12 @@ firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-ui-database = { module = "com.firebaseui:firebase-ui-database", version.ref = "firebaseUiDatabase" }
 firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging", version.ref = "firebaseMessaging" }
+rxbinding = { module = "com.jakewharton.rxbinding2:rxbinding", version.ref = "rxbinding" }
+rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
+rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroid" }
+adapter-rxjava3 = { module = "com.squareup.retrofit2:adapter-rxjava3", version.ref = "adapterRxjava3" }
+androidx-room-rxjava3 = { module = "androidx.room:room-rxjava3", version.ref = "roomKtx" }
+androidx-lifecycle-reactivestreams-ktx = { module = "androidx.lifecycle:lifecycle-reactivestreams-ktx", version.ref = "lifecycleReactivestreamsKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

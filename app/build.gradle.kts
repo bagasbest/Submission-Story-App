@@ -122,4 +122,10 @@ dependencies {
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
     implementation(libs.firebase.ui.database)
+    implementation(libs.rxjava)
+    implementation(libs.rxbinding)
+    implementation(libs.rxandroid)
+    implementation(libs.adapter.rxjava3)
+    implementation(libs.androidx.room.rxjava3)
+    implementation(libs.androidx.lifecycle.reactivestreams.ktx)
 }
