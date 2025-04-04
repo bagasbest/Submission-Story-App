@@ -9,9 +9,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.FragmentHomeBinding
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.data.Resource
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.ui.TourismAdapter
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.detail.DetailTourismActivity
+import com.project.tourismcore.data.Resource
+import com.project.tourismcore.ui.TourismAdapter
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 

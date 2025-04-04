@@ -138,4 +138,6 @@ dependencies {
     kapt(libs.dagger.compiler)
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+    implementation(project(":core"))
+    implementation(project(":tourismcore"))
 }

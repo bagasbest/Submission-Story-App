@@ -2,16 +2,14 @@ package com.project.dicodingplayground
 
 import android.app.Application
 import android.content.Context
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.databaseModule
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.networkModule
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.repositoryModule
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.useCaseModule
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.viewModelModule
-import com.project.dicodingplayground.practice_modul.androidexpert.dagger.di.AppComponent
-import com.project.dicodingplayground.practice_modul.androidexpert.dagger.di.DaggerAppComponent
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.di.useCaseModule
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.di.viewModelModule
 import com.project.dicodingplayground.practice_modul.androidexpert.koin.storageModule
 import com.project.dicodingplayground.practice_modul.databaserelation.StudentRepository
 import com.project.dicodingplayground.practice_modul.databaserelation.database.StudentDatabase
+import com.project.tourismcore.di.databaseModule
+import com.project.tourismcore.di.networkModule
+import com.project.tourismcore.di.repositoryModule
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import org.koin.android.ext.koin.androidContext
@@ -42,12 +40,6 @@ open class MyApplication : Application() {
                 ),
             )
         }
-    }
-
-    val appComponent: AppComponent by lazy {
-        DaggerAppComponent.factory().create(
-            appContext
-        )
     }
 
     private val applicationScope = CoroutineScope(SupervisorJob())

@@ -1,13 +1,13 @@
 package com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.detail
 
 import android.os.Bundle
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.domain.model.Tourism
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.IntentCompat.getParcelableExtra
 import com.bumptech.glide.Glide
 import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityDetailTourismBinding
+import com.project.tourismcore.domain.model.Tourism
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DetailTourismActivity : AppCompatActivity() {

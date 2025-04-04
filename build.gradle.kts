@@ -7,4 +7,5 @@ plugins {
     id ("org.jetbrains.kotlinx.kover") version "0.5.0"
     id("com.google.gms.google-services") version "4.4.2" apply false
     alias(libs.plugins.hiltAndroid) apply false
+    alias(libs.plugins.android.library) apply false
 }

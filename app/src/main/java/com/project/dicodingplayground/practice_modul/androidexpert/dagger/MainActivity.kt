@@ -3,10 +3,11 @@ package com.project.dicodingplayground.practice_modul.androidexpert.dagger
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.project.dicodingplayground.MyApplication
 import com.project.dicodingplayground.databinding.ActivityMain19Binding
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMain19Binding? = null
@@ -15,7 +16,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var userRepository: UserRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        (application as MyApplication).appComponent.inject(this)
         super.onCreate(savedInstanceState)
         _binding = ActivityMain19Binding.inflate(layoutInflater)
         setContentView(binding.root)

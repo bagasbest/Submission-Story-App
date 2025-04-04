@@ -2,14 +2,17 @@ package com.project.dicodingplayground.practice_modul.androidexpert.dagger
 
 import android.content.Context
 import android.content.SharedPreferences
+import dagger.hilt.android.qualifiers.ApplicationContext
+import javax.inject.Inject
 
-class SessionManager(context: Context) {
+class SessionManager @Inject constructor(@ApplicationContext context: Context) {
     companion object {
         const val KEY_LOGIN = "isLogin"
         const val KEY_USERNAME = "username"
     }
 
-    private var pref: SharedPreferences = context.getSharedPreferences("Session", Context.MODE_PRIVATE)
+    private var pref: SharedPreferences =
+        context.getSharedPreferences("Session", Context.MODE_PRIVATE)
     private var editor: SharedPreferences.Editor = pref.edit()
 
     fun createLoginSession() {
@@ -22,9 +25,10 @@ class SessionManager(context: Context) {
         editor.commit()
     }
 
-    val isLogin: Boolean = pref.getBoolean(KEY_LOGIN, false)
+    val isLogin: Boolean
+        get() = pref.getBoolean(KEY_LOGIN, false)
 
-    fun saveToPreference(key: String, value: String) = editor.putString(key, value).commit()
+    fun saveToPreference(key: String, value: String) = editor.putString(key, value).apply()
 
     fun getFromPreference(key: String) = pref.getString(key, "")
 
