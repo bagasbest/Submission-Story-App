@@ -1,15 +1,10 @@
-package com.project.dicodingplayground.practice_modul.androidexpert.reactive
+package com.project.dicodingplayground.practice_modul.androidexpert.reactivex
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.util.Patterns
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.jakewharton.rxbinding2.widget.RxTextView
 import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityMain16Binding

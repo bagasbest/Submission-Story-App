@@ -18,7 +18,6 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
         ksp {
             arg("room.schemaLocation", "$projectDir/schemas")
         }
@@ -128,4 +127,5 @@ dependencies {
     implementation(libs.adapter.rxjava3)
     implementation(libs.androidx.room.rxjava3)
     implementation(libs.androidx.lifecycle.reactivestreams.ktx)
+    implementation(libs.android.sdk)
 }

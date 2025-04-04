@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
@@ -28,9 +28,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DicodingPlayground"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".practice_modul.androidexpert.reactive.MainActivity"
+            android:name=".practice_modul.androidexpert.reactivecoroutineflow.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice_modul.androidexpert.reactivex.MainActivity"
             android:exported="false" />
         <activity
             android:name=".practice_modul.androidexpert.cleanarchitecture2.detail.DetailTourismActivity"
@@ -120,7 +123,7 @@
             android:name=".practice_modul.exoplayer.PlaybackService"
             android:enabled="true"
             android:exported="true"
-            android:foregroundServiceType="mediaPlayback">
+            android:foregroundServiceType="mediaPlayback" >
             <intent-filter>
                 <action android:name="androidx.media3.session.MediaSessionService" />
                 <action android:name="android.media.browse.MediaBrowserService" />
@@ -194,7 +197,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -204,7 +207,7 @@
 
         <receiver
             android:name=".practice_modul.widget.image_banner.ImageBannerWidget"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -215,7 +218,7 @@
         </receiver>
         <receiver
             android:name=".practice_modul.widget.random_number.RandomNumberWidget"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -235,7 +238,7 @@
         <service
             android:name=".practice_modul.service.MyForegroundService"
             android:enabled="true"
-            android:foregroundServiceType="specialUse">
+            android:foregroundServiceType="specialUse" >
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="explanation_for_special_use" />
@@ -248,7 +251,7 @@
             android:name="com.google.android.gms.metadata.ModuleDependencies"
             android:enabled="false"
             android:exported="false"
-            tools:ignore="MissingClass">
+            tools:ignore="MissingClass" >
             <intent-filter>
                 <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
             </intent-filter>
@@ -262,7 +265,7 @@
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true">
+            android:grantUriPermissions="true" >
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -270,7 +273,7 @@
 
         <service
             android:name=".practice_modul.firebase.MyFirebaseMessagingService"
-            android:exported="false">
+            android:exported="false" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

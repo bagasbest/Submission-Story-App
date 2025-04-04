@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         )[SettingsViewModel::class.java]
         SettingsPreferencesHelper.applyThemeSettings(this@MainActivity, settingsViewModel, null) {
             binding.apply {
-                startActivity(Intent(this@MainActivity, com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.MainActivity::class.java))
+                startActivity(Intent(this@MainActivity, com.project.dicodingplayground.practice_modul.androidexpert.reactivecoroutineflow.MainActivity::class.java))
                 finish()
             }
         }
