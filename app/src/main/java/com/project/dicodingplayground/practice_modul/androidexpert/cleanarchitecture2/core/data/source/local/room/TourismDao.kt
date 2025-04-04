@@ -6,20 +6,19 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.data.source.local.entity.TourismEntity
-import io.reactivex.rxjava3.core.Completable
-import io.reactivex.rxjava3.core.Flowable
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface TourismDao {
 
     @Query("SELECT * FROM tourism")
-    fun getAllTourism(): Flowable<List<TourismEntity>>
+    fun getAllTourism(): Flow<List<TourismEntity>>
 
     @Query("SELECT * FROM tourism WHERE isFavorite = 1")
-    fun getFavoriteTourism(): Flowable<List<TourismEntity>>
+    fun getFavoriteTourism(): Flow<List<TourismEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertTourism(tourism: List<TourismEntity>): Completable
+    suspend fun insertTourism(tourism: List<TourismEntity>)
 
     @Update
     fun updateFavoriteTourism(tourism: TourismEntity)

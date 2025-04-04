@@ -77,6 +77,7 @@ dependencies {
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.junit.jupiter)
+    testImplementation(libs.junit.jupiter)
     ksp(libs.room.compiler)
     implementation(libs.androidx.room.ktx)
     testImplementation(libs.junit)
@@ -128,4 +129,8 @@ dependencies {
     implementation(libs.androidx.room.rxjava3)
     implementation(libs.androidx.lifecycle.reactivestreams.ktx)
     implementation(libs.android.sdk)
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    androidTestImplementation(libs.koin.test.junit4)
+
 }

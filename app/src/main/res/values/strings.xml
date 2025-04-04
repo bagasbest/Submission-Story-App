@@ -227,4 +227,5 @@
     <string name="password_not_same">Password not same!</string>
     <string name="your_place">Your Place</string>
     <string name="maptiler_api_key" translatable="false">KIkfbUzceU2TFCblwuoR</string>
+    <string name="username">Username</string>
 </resources>

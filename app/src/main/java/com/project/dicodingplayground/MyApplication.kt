@@ -2,12 +2,22 @@ package com.project.dicodingplayground
 
 import android.app.Application
 import android.content.Context
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.databaseModule
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.networkModule
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.repositoryModule
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.useCaseModule
+import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.viewModelModule
+import com.project.dicodingplayground.practice_modul.androidexpert.koin.storageModule
 import com.project.dicodingplayground.practice_modul.databaserelation.StudentRepository
 import com.project.dicodingplayground.practice_modul.databaserelation.database.StudentDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
+import org.koin.core.context.startKoin
+import org.koin.core.logger.Level
 
-class MyApplication : Application() {
+open class MyApplication : Application() {
     companion object {
         lateinit var appContext: Context
             private set
@@ -16,6 +26,20 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         appContext = applicationContext
+        startKoin {
+            androidLogger(Level.NONE)
+            androidContext(this@MyApplication)
+            modules(
+                listOf(
+                    storageModule,
+                    databaseModule,
+                    networkModule,
+                    repositoryModule,
+                    useCaseModule,
+                    viewModelModule
+                ),
+            )
+        }
     }
 
     private val applicationScope = CoroutineScope(SupervisorJob())

@@ -9,23 +9,4 @@ import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitec
 @Database(entities = [TourismEntity::class], version = 1, exportSchema = false)
 abstract class TourismDatabase: RoomDatabase() {
     abstract fun tourismDao(): TourismDao
-
-    companion object {
-        @Volatile
-        private var INSTANCE: TourismDatabase? = null
-
-        @JvmStatic
-        fun getInstance(context: Context): TourismDatabase {
-            return INSTANCE ?: synchronized(this) {
-                INSTANCE ?: Room.databaseBuilder(
-                    context.applicationContext,
-                    TourismDatabase::class.java,
-                    "tourism"
-                )
-                    .fallbackToDestructiveMigration()
-                    .build()
-                    .also { INSTANCE = it }
-            }
-        }
-    }
 }

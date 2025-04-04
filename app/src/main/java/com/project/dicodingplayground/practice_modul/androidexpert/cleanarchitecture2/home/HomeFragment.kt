@@ -6,21 +6,20 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.FragmentHomeBinding
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.data.Resource
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.ui.TourismAdapter
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.ui.ViewModelFactory
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.detail.DetailTourismActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class HomeFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+    private val homeViewModel: HomeViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -42,8 +41,6 @@ class HomeFragment : Fragment() {
                 startActivity(intent)
             }
 
-            val factory = ViewModelFactory.getInstance(requireActivity())
-            homeViewModel = ViewModelProvider(this, factory)[HomeViewModel::class.java]
             homeViewModel.tourism.observe(viewLifecycleOwner) { tourism ->
                 if (tourism != null) {
                     when (tourism) {

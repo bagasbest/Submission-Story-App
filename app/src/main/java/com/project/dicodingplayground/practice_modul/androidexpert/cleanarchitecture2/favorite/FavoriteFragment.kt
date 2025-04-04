@@ -6,22 +6,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.FragmentFavoriteBinding
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.ui.TourismAdapter
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.ui.ViewModelFactory
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.detail.DetailTourismActivity
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 class FavoriteFragment : Fragment() {
 
     private var _binding: FragmentFavoriteBinding? = null
     private val binding get() = _binding!!
-    private val favoriteViewModel: FavoriteViewModel by viewModels {
-        ViewModelFactory.getInstance(requireActivity())
-    }
+    private val favoriteViewModel: FavoriteViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

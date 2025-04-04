@@ -2,23 +2,19 @@ package com.project.dicodingplayground.practice_modul.androidexpert.cleanarchite
 
 import android.os.Bundle
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.domain.model.Tourism
-
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.content.IntentCompat.getParcelableExtra
 import com.bumptech.glide.Glide
 import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityDetailTourismBinding
-import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.ui.ViewModelFactory
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class DetailTourismActivity : AppCompatActivity() {
 
     private var _binding: ActivityDetailTourismBinding? = null
     private val binding get() = _binding!!
-    private val detailTourismViewModel: DetailTourismViewModel by viewModels {
-        ViewModelFactory.getInstance(this)
-    }
+    private val detailTourismViewModel: DetailTourismViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
