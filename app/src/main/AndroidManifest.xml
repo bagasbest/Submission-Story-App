@@ -30,6 +30,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".practice_modul.androidexpert.dagger.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".practice_modul.androidexpert.dagger.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".practice_modul.androidexpert.koin.HomeActivity"
             android:exported="false" />
         <activity

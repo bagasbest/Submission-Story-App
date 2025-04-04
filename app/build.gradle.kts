@@ -5,6 +5,8 @@ plugins {
     id("com.google.devtools.ksp")
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
     id("com.google.gms.google-services")
+    id("kotlin-kapt")
+    alias(libs.plugins.hiltAndroid)
 }
 
 android {
@@ -132,5 +134,8 @@ dependencies {
     implementation(libs.koin.core)
     implementation(libs.koin.android)
     androidTestImplementation(libs.koin.test.junit4)
-
+    implementation(libs.dagger)
+    kapt(libs.dagger.compiler)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 }

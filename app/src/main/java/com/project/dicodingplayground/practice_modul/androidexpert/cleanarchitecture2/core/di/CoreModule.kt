@@ -27,7 +27,10 @@ val databaseModule = module {
         get<TourismDatabase>().tourismDao()
     }
     single {
-        Room.databaseBuilder(androidContext(), TourismDatabase::class.java, "Tourism.db")
+        Room.databaseBuilder(
+            androidContext(),
+            TourismDatabase::class.java,
+            "Tourism.db")
             .fallbackToDestructiveMigration().build()
     }
 }

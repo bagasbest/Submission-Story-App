@@ -7,6 +7,8 @@ import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitec
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.repositoryModule
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.useCaseModule
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.core.di.viewModelModule
+import com.project.dicodingplayground.practice_modul.androidexpert.dagger.di.AppComponent
+import com.project.dicodingplayground.practice_modul.androidexpert.dagger.di.DaggerAppComponent
 import com.project.dicodingplayground.practice_modul.androidexpert.koin.storageModule
 import com.project.dicodingplayground.practice_modul.databaserelation.StudentRepository
 import com.project.dicodingplayground.practice_modul.databaserelation.database.StudentDatabase
@@ -40,6 +42,12 @@ open class MyApplication : Application() {
                 ),
             )
         }
+    }
+
+    val appComponent: AppComponent by lazy {
+        DaggerAppComponent.factory().create(
+            appContext
+        )
     }
 
     private val applicationScope = CoroutineScope(SupervisorJob())
