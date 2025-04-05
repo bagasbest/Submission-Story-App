@@ -24,3 +24,5 @@ rootProject.name = "Dicoding Playground"
 include(":app")
 include(":core")
 include(":tourismcore")
+include(":chat")
+include(":maps")

@@ -1,5 +1,7 @@
 package com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -16,6 +18,7 @@ import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityMain15Binding
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.favorite.FavoriteFragment
 import com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture2.home.HomeFragment
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -64,7 +67,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 title = getString(R.string.menu_favorite)
             }
             R.id.nav_map -> {
-                Toast.makeText(this, "Coming soon", Toast.LENGTH_SHORT).show()
+                val uri = "tourismapp://maps".toUri()
+                startActivity(Intent(Intent.ACTION_VIEW, uri))
             }
         }
         if (fragment != null) {

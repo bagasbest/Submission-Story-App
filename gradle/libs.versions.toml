@@ -6,6 +6,7 @@ converterGson = "2.9.0"
 dagger = "2.56.1"
 datastorePreferences = "1.1.4"
 desugar_jdk_libs = "2.1.5"
+featureDeliveryKtx = "2.1.0"
 firebaseBom = "33.12.0"
 glide = "4.16.0"
 hiltAndroid = "2.52"
@@ -84,6 +85,7 @@ core-ktx = { module = "androidx.test:core-ktx", version.ref = "rules" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
 desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
+feature-delivery-ktx = { module = "com.google.android.play:feature-delivery-ktx", version.ref = "featureDeliveryKtx" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
@@ -149,3 +151,4 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsGradlePlugin" }
 hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "agp" }

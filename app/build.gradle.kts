@@ -49,6 +49,7 @@ android {
     testOptions {
         animationsDisabled = true
     }
+    dynamicFeatures += setOf(":chat", ":maps")
 }
 
 dependencies {
@@ -140,4 +141,5 @@ dependencies {
     kapt(libs.hilt.android.compiler)
     implementation(project(":core"))
     implementation(project(":tourismcore"))
+    implementation(libs.feature.delivery.ktx)
 }
