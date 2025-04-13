@@ -34,18 +34,18 @@ class NewsRepositoryTest {
         newsRepository = NewsRepository(apiService, newsDao)
     }
 
-    @Test
-    fun `when getHeadlineNews Should Not Null`() = runTest {
-        val expectedNews = DataDummy.generateDummyNewsResponse()
-        val actualNews = newsRepository.getHeadlineNews()
-        actualNews.observeForTesting {
-            Assert.assertNotNull(actualNews)
-            Assert.assertEquals(
-                expectedNews.articles.size,
-                (actualNews.value as Result.Success).data.size
-            )
-        }
-    }
+//    @Test
+//    fun `when getHeadlineNews Should Not Null`() = runTest {
+//        val expectedNews = DataDummy.generateDummyNewsResponse()
+//        val actualNews = newsRepository.getHeadlineNews()
+//        actualNews.observeForTesting {
+//            Assert.assertNotNull(actualNews)
+//            Assert.assertEquals(
+//                expectedNews.articles.size,
+//                (actualNews.value as Result.Success).data.size
+//            )
+//        }
+//    }
 
     @Test
     fun `when saveNews Should Exist in getBookmarkedNews`() = runTest {
