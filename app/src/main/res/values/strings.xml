@@ -228,6 +228,6 @@
     <string name="your_place">Your Place</string>
     <string name="maptiler_api_key" translatable="false">KIkfbUzceU2TFCblwuoR</string>
     <string name="username">Username</string>
-    <string name="title_chat">Chat</string>
-    <string name="title_maps">Maps</string>
+    <string name="title_chat" translatable="false">Chat</string>
+    <string name="title_maps" translatable="false">Maps</string>
 </resources>
