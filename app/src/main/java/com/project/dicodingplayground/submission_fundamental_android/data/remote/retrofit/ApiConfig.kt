@@ -1,7 +1,5 @@
 package com.project.dicodingplayground.submission_fundamental_android.data.remote.retrofit
 
-import com.chuckerteam.chucker.api.ChuckerInterceptor
-import com.project.dicodingplayground.MyApplication
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -13,7 +11,6 @@ class ApiConfig {
             .setLevel(HttpLoggingInterceptor.Level.BODY)
         val client: OkHttpClient = OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
-            .addInterceptor(ChuckerInterceptor(MyApplication.appContext))
             .build()
         val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl("https://event-api.dicoding.dev/")
