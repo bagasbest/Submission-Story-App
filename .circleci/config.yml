@@ -10,6 +10,10 @@ jobs:
     steps:
       - checkout
       - run: java --version
+      # Create local.properties to set the Android SDK path
+      - run:
+          name: Create local.properties file
+          command: echo "sdk.dir=${ANDROID_HOME}" > local.properties
       - restore_cache:
           key: android-orb-v1-
       - android/change-java-version:
