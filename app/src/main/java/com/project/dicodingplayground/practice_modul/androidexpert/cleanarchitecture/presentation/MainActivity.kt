@@ -1,12 +1,8 @@
 package com.project.dicodingplayground.practice_modul.androidexpert.cleanarchitecture.presentation
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityMain14Binding
 
 class MainActivity : AppCompatActivity() {

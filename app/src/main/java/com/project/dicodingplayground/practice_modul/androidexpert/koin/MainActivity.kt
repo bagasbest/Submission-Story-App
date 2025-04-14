@@ -3,7 +3,6 @@ package com.project.dicodingplayground.practice_modul.androidexpert.koin
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.project.dicodingplayground.R
 import com.project.dicodingplayground.databinding.ActivityMain18Binding
 import org.koin.android.ext.android.inject
 

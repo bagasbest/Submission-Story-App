@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".practice_modul.cleanarchitecture2.detail.DetailTourismActivity">
+    tools:context=".practice_modul.androidexpert.cleanarchitecture2.detail.DetailTourismActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"

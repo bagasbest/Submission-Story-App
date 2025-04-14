@@ -1,6 +1,5 @@
 package com.project.dicodingplayground.practice_modul.androidexpert.reactivecoroutineflow
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import com.project.dicodingplayground.MyApplication

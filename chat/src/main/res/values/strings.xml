@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="chat_feature">Chat Feature</string>
+    <string name="chat_feature" translatable="false">Chat Feature</string>
 </resources>

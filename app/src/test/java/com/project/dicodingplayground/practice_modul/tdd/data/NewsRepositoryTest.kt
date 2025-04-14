@@ -6,7 +6,6 @@ import com.project.dicodingplayground.practice_modul.tdd.data.remote.retrofit.Ap
 import com.project.dicodingplayground.practice_modul.tdd.utils.DataDummy
 import com.project.dicodingplayground.practice_modul.tdd.utils.MainDispatcherRule
 import com.project.dicodingplayground.practice_modul.tdd.utils.getOrAwaitValue
-import com.project.dicodingplayground.practice_modul.tdd.utils.observeForTesting
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert

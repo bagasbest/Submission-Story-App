@@ -1,10 +1,7 @@
 package com.project.chat
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.project.chat.databinding.ActivityChatBinding
 import com.project.core.SessionManager
 import com.project.core.UserRepository

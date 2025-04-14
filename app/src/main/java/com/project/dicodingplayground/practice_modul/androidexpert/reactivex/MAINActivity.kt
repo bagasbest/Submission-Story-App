@@ -11,7 +11,7 @@ import com.project.dicodingplayground.databinding.ActivityMain16Binding
 import io.reactivex.Observable
 import io.reactivex.functions.Function3
 
-class MainActivity : AppCompatActivity() {
+class MAINActivity : AppCompatActivity() {
 
     private var _binding: ActivityMain16Binding? = null
     private val binding get() = _binding!!

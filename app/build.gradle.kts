@@ -53,6 +53,7 @@ android {
 }
 
 dependencies {
+    lintChecks(project(":lint"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

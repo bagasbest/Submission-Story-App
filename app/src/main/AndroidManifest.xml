@@ -51,7 +51,7 @@
             android:name=".practice_modul.androidexpert.reactivecoroutineflow.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".practice_modul.androidexpert.reactivex.MainActivity"
+            android:name=".practice_modul.androidexpert.reactivex.MAINActivity"
             android:exported="false" />
         <activity
             android:name=".practice_modul.androidexpert.cleanarchitecture2.detail.DetailTourismActivity"

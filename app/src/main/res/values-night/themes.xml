@@ -1,5 +1,5 @@
 <!-- res/values-night/themes.xml -->
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application night theme. -->
     <style name="Base.Theme.DicodingPlayground" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Customize your night theme here. -->
