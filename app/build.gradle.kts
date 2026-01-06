@@ -143,4 +143,5 @@ dependencies {
     implementation(project(":core"))
     implementation(project(":tourismcore"))
     implementation(libs.feature.delivery.ktx)
+    debugImplementation(libs.leakcanary.android)
 }

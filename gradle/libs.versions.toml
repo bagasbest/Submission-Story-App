@@ -19,6 +19,7 @@ espressoCore = "3.6.1"
 appcompat = "1.7.0"
 kotlinStdlib = "1.7.21"
 kotlinxCoroutinesAndroid = "1.9.0"
+leakcanaryAndroid = "2.10"
 library = "4.1.0"
 lifecycleViewmodelKtx = "2.8.7"
 lintApi = "30.3.1"
@@ -67,6 +68,8 @@ firebaseDatabase = "21.0.0"
 firebaseUiDatabase = "8.0.0"
 firebaseMessaging = "24.1.1"
 jetbrainsKotlinJvm = "2.0.0"
+androidDatabaseSqlcipher = "4.5.4"
+sqliteKtx = "2.5.0"
 
 [libraries]
 android-sdk = { module = "org.maplibre.gl:android-sdk", version.ref = "androidSdk" }
@@ -103,6 +106,7 @@ koin-test-junit4 = { module = "io.insert-koin:koin-test-junit4", version.ref = "
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlinStdlib" }
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesAndroid" }
+leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
 library = { module = "com.github.chuckerteam.chucker:library", version.ref = "library" }
 lint-api = { module = "com.android.tools.lint:lint-api", version.ref = "lintApi" }
 lint-checks = { module = "com.android.tools.lint:lint-checks", version.ref = "lintApi" }
@@ -150,6 +154,8 @@ rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroi
 adapter-rxjava3 = { module = "com.squareup.retrofit2:adapter-rxjava3", version.ref = "adapterRxjava3" }
 androidx-room-rxjava3 = { module = "androidx.room:room-rxjava3", version.ref = "roomKtx" }
 androidx-lifecycle-reactivestreams-ktx = { module = "androidx.lifecycle:lifecycle-reactivestreams-ktx", version.ref = "lifecycleReactivestreamsKtx" }
+android-database-sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "androidDatabaseSqlcipher" }
+androidx-sqlite-ktx = { module = "androidx.sqlite:sqlite-ktx", version.ref = "sqliteKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

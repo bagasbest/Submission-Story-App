@@ -8,6 +8,8 @@ import com.project.tourismcore.data.source.remote.RemoteDataSource
 import com.project.tourismcore.data.source.remote.network.ApiService
 import com.project.tourismcore.domain.repository.ITourismRepository
 import com.project.tourismcore.utils.AppExecutors
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.ext.koin.androidContext
@@ -21,11 +23,18 @@ val databaseModule = module {
         get<TourismDatabase>().tourismDao()
     }
     single {
+        val passphrase: ByteArray = SQLiteDatabase.getBytes("dicoding".toCharArray())
+        val factory = SupportFactory(passphrase)
+        Room.databaseBuilder(
+            androidContext(),
+            TourismDatabase::class.java, "Tourism.db")
         Room.databaseBuilder(
             androidContext(),
             TourismDatabase::class.java,
             "Tourism.db")
-            .fallbackToDestructiveMigration().build()
+            .fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
     }
 }
 
